@@ -1,5 +1,6 @@
-# Simple Codeigniter REST API
-Simple source code for learning basic backend developer using REST API (login, CRUD).
+# Codeigniter REST API in 30 minutes
+
+Support for Restful API using Codeigniter (login, CRUD) in 30 minutes.
 
 # Demo
 [Visit Here](https://youtu.be/X2i-rt0yxDQ)
