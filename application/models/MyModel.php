@@ -32,7 +32,7 @@ class MyModel extends CI_Model {
                $last_login = date('Y-m-d H:i:s');
                $token = crypt(substr( md5(rand()), 0, 7));
                $expired_at = date("Y-m-d H:i:s", strtotime('+12 hours'));
-               $this->db->trans_start();
+               $this->db->trans_begin();
                $this->db->where('id',$id)->update('users',array('last_login' => $last_login));
                $this->db->insert('users_authentication',array('users_id' => $id,'token' => $token,'expired_at' => $expired_at));
                if ($this->db->trans_status() === FALSE){
